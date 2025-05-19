@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Sidi Tall, développeur web spécialisé en HTML, CSS, JavaScript et plus encore.">
+    <meta name="keywords" content="Sidi Tall, développeur web, portfolio, front-end, back-end">
+    <meta name="author" content="Sidi Tall">
+    <meta property="og:title" content="Portfolio de Sidi Tall - Développeur Web">
+    <meta property="og:description" content="Découvrez mes projets et compétences en développement web.">
+    <meta property="og:image" content="https://yourwebsite.com/images/preview.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <title>Portfolio 3D de Sidi Tall</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <div class="wrapper">
+        <div class="cover cover-right" role="button" aria-label="Ouvrir le portfolio">
+            <div class="circuit-overlay"></div>
+            <div class="cover-text" data-clicks="0">le GEEK</div>
+            <div class="cover-img"></div>
+            <button class="open-btn">Ouvrir</button>
+        </div>
+        <div class="book closed" role="region" aria-label="Portfolio interactif en forme de livre">
+            <div class="book-spine"></div>
+            <div class="progress-bar"></div>
+            <div class="book-page page-left">
+                <div class="profile-page">
+                    <img src="Photo_SIDI.jpg" alt="Photo de Sidi Tall" loading="lazy">
+                    <h1>Sidi Tall</h1>
+                    <h3>Développeur Web</h3>
+                    <div class="social-media">
+                        <a href="https://facebook.com/yourprofile" aria-label="Facebook de Sidi Tall"><i class="bx bxl-facebook"></i></a>
+                        <a href="https://twitter.com/yourprofile" aria-label="Twitter de Sidi Tall"><i class="bx bxl-twitter"></i></a>
+                        <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn de Sidi Tall"><i class="bx bxl-linkedin"></i></a>
+                        <a href="https://instagram.com/yourprofile" aria-label="Instagram de Sidi Tall"><i class="bx bxl-instagram"></i></a>
+                    </div>
+                    <p>Bonjour, je suis Sidi Tall, passionné par le développement web. J’aime créer des interfaces modernes, performantes et accessibles.</p>
+                    <div class="btn-box">
+                        <a href="/path/to/your-cv.pdf" class="btn" download>Télécharger Mon CV</a>
+                        <a href="#" class="btn contact-me" aria-label="Aller à la page de contact">Contactez Moi</a>
+                    </div>
+                    <span class="signature" data-page="profile">Portfolio de Sidi Tall</span>
+                </div>
+            </div>
+            <div class="book-page page-right turn" id="turn-1">
+                <div class="page-front">
+                    <h1 class="title">Expérience Professionnelle</h1>
+                    <div class="workeduc-box">
+                        <div class="workeduc-content">
+                            <span class="year"><i class="bx bxs-calendar"></i>2020 - 2021</span>
+                            <h3>Développeur Web - Entreprise</h3>
+                            <p>Développement d’applications web avec HTML, CSS, et JavaScript. Collaboration avec des équipes pour optimiser l’expérience utilisateur.</p>
+                        </div>
+                        <div class="workeduc-content">
+                            <span class="year"><i class="bx bxs-calendar"></i>2021 - 2022</span>
+                            <h3>Développeur Front-End - Startup</h3>
+                            <p>Création d’interfaces responsives avec React et Tailwind CSS, intégration d’API REST.</p>
+                        </div>
+                        <div class="workeduc-content">
+                            <span class="year"><i class="bx bxs-calendar"></i>2022 - 2023</span>
+                            <h3>Développeur Full-Stack - Freelance</h3>
+                            <p>Conception et déploiement de sites web complets avec Node.js, MongoDB, et Express.</p>
+                        </div>
+                    </div>
+                    <span class="signature" data-page="1">Portfolio de Sidi Tall</span>
+                    <span class="number-page">1</span>
+                    <button class="nextprev-btn" data-page="turn-1" aria-label="Page suivante"><i class="bx bx-chevron-right"></i></button>
+                </div>
+                <div class="page-back">
+                    <h1 class="title">Éducation</h1>
+                    <div class="workeduc-box">
+                        <div class="workeduc-content">
+                            <span class="year"><i class="bx bxs-calendar"></i>2019 - 2020</span>
+                            <h3>Brevet d’Études du Premier Cycle</h3>
+                            <p>Obtention du brevet avec mention, lycée de [Ville].</p>
+                        </div>
+                        <div class="workeduc-content">
+                            <span class="year"><i class="bx bxs-calendar"></i>2022 - 2023</span>
+                            <h3>Baccalauréat Scientifique</h3>
+                            <p>Spécialisation en mathématiques et informatique, lycée de [Ville].</p>
+                        </div>
+                        <div class="workeduc-content">
+                            <span class="year"><i class="bx bxs-calendar"></i>2023 - 2025</span>
+                            <h3>Licence en Informatique - Université</h3>
+                            <p>Études en développement web, algorithmique, et bases de données.</p>
+                        </div>
+                    </div>
+                    <span class="signature" data-page="2">Portfolio de Sidi Tall</span>
+                    <span class="number-page">2</span>
+                    <button class="nextprev-btn back" data-page="turn-1" aria-label="Page précédente"><i class="bx bx-chevron-left"></i></button>
+                </div>
+            </div>
+            <div class="book-page page-right turn" id="turn-2">
+                <div class="page-front">
+                    <h1 class="title">Mes Services</h1>
+                    <div class="services-box">
+                        <div class="services-content">
+                            <i class="bx bx-code-alt"></i>
+                            <h3>Développement Web</h3>
+                            <p>Création de sites web modernes et responsives.</p>
+                            <a href="#" class="btn">En savoir plus</a>
+                        </div>
+                        <div class="services-content">
+                            <i class="bx bxs-paint"></i>
+                            <h3>Design UI/UX</h3>
+                            <p>Conception d’interfaces intuitives avec Figma.</p>
+                            <a href="#" class="btn">En savoir plus</a>
+                        </div>
+                        <div class="services-content">
+                            <i class="bx bx-bar-chart-alt"></i>
+                            <h3>Développement d’Applications</h3>
+                            <p>Applications web avec React, Node.js, et plus.</p>
+                            <a href="#" class="btn">En savoir plus</a>
+                        </div>
+                        <div class="services-content">
+                            <i class="bx bx-search"></i>
+                            <h3>SEO</h3>
+                            <p>Optimisation pour les moteurs de recherche.</p>
+                            <a href="#" class="btn">En savoir plus</a>
+                        </div>
+                    </div>
+                    <span class="signature" data-page="3">Portfolio de Sidi Tall</span>
+                    <span class="number-page">3</span>
+                    <button class="nextprev-btn" data-page="turn-2" aria-label="Page suivante"><i class="bx bx-chevron-right"></i></button>
+                </div>
+                <div class="page-back">
+                    <h1 class="title">Mes Compétences</h1>
+                    <div class="skill-box">
+                        <div class="skill-content">
+                            <h3>Front-End</h3>
+                            <div class="content">
+                                <span><i class="bx bxl-html5"></i>HTML</span>
+                                <span><i class="bx bxl-css3"></i>CSS</span>
+                                <span><i class="bx bxl-javascript"></i>JavaScript</span>
+                                <span><i class="bx bxl-react"></i>React</span>
+                                <span><i class="bx bxl-tailwind-css"></i>Tailwind</span>
+                            </div>
+                        </div>
+                        <div class="skill-content">
+                            <h3>Back-End</h3>
+                            <div class="content">
+                                <span><i class="bx bxl-nodejs"></i>Node.js</span>
+                                <span><i class="bx bxl-python"></i>Python</span>
+                                <span><i class="bx bxl-mongodb"></i>MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="skill-content">
+                            <h3>UI/UX Design</h3>
+                            <div class="content">
+                                <span><i class="bx bxl-figma"></i>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="signature" data-page="4">Portfolio de Sidi Tall</span>
+                    <span class="number-page">4</span>
+                    <button class="nextprev-btn back" data-page="turn-2" aria-label="Page précédente"><i class="bx bx-chevron-left"></i></button>
+                </div>
+            </div>
+            <div class="book-page page-right turn" id="turn-3">
+                <div class="page-front">
+                    <h1 class="title">Projets Récents</h1>
+                    <div class="portfolio-box">
+                        <div class="img-box">
+                            <img src="project-image.jpg" alt="Aperçu d’un projet web" loading="lazy">
+                        </div>
+                        <div class="info-box">
+                            <div class="info-title">
+                                <h3>Projet Web Moderne</h3>
+                                <a href="https://yourproject.com" target="_blank">Live Preview<i class="bx bx-link-external"></i></a>
+                            </div>
+                            <p>Technologies utilisées :</p>
+                            <p>React, Tailwind CSS, Node.js. Un site e-commerce avec une interface utilisateur fluide et une API performante.</p>
+                        </div>
+                        <div class="btn-box">
+                            <a href="https://github.com/yourprofile/project" class="btn" target="_blank">Code Source</a>
+                            <a href="https://yourwebsite.com/projects" class="btn">Plus de Projets</a>
+                        </div>
+                    </div>
+                    <span class="signature" data-page="5">Portfolio de Sidi Tall</span>
+                    <span class="number-page">5</span>
+                    <button class="nextprev-btn" data-page="turn-3" aria-label="Page suivante"><i class="bx bx-chevron-right"></i></button>
+                </div>
+                <div class="page-back">
+                    <h1 class="title">Contactez Moi !</h1>
+                    <div class="contact-box">
+                        <form id="contact-form">
+                            <input type="text" class="field" placeholder="Nom & Prénom" required aria-label="Votre nom">
+                            <input type="email" class="field" placeholder="Adresse Email" required aria-label="Votre email">
+                            <textarea class="field" placeholder="Votre Message" required aria-label="Votre message"></textarea>
+                            <button type="submit" class="btn">Envoyer Message</button>
+                        </form>
+                    </div>
+                    <span class="signature" data-page="6">Portfolio de Sidi Tall</span>
+                    <span class="number-page">6</span>
+                    <button class="nextprev-btn back" data-page="turn-3" aria-label="Page précédente"><i class="bx bx-chevron-left"></i></button>
+                    <button class="close-btn" aria-label="Fermer le livre">Fermer</button>
+                    <a href="#" class="back-profile" aria-label="Retour au profil">
+                        <p>Profil</p>
+                        <i class="bx bxs-user"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="cover back">
+                <div class="cover-text">MERCI</div>
+            </div>
+        </div>
+    </div>
+    <script src="3d_portfolio.js"></script>
+</body>
+</html>
