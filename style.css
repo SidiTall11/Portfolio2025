@@ -97,7 +97,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('circuit-pattern.png') repeat;
+    background: url('sidi.jpg') repeat;
     opacity: 0.2;
 }
 
@@ -120,7 +120,7 @@ body {
     font-size: 4rem;
     font-weight: 700;
     font-family: 'Orbitron', sans-serif;
-    color: var(--neon-color);
+    color: var(--white-color);
     text-transform: uppercase;
     text-shadow: 0 0 10px var(--neon-color), 2px 2px 5px rgba(0, 0, 0, 0.5);
     transform: translateZ(20px);
@@ -137,7 +137,7 @@ body {
 .cover.back .cover-text:hover {
     color: #ffd700;
     transform: translateZ(20px) scale(1.1);
-    animation: pulse-merci 1.5s infinite;
+    animation: pulse-merci 2.5s infinite;
 }
 
 .cover.back .cover-text::after {
@@ -208,7 +208,7 @@ body {
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
     font-family: 'Orbitron', sans-serif;
-    color: var(--neon-color);
+    color: var(--bg-color);
     box-shadow: 0 0 10px var(--neon-color);
     cursor: pointer;
     transition: 0.3s;
